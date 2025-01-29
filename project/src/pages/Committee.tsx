@@ -1,55 +1,55 @@
 const committees = {
   organizing: [
     {
-      name: 'Dr. Sarah Johnson',
+      name: 'Dr. Sabeena K',
       role: 'Conference Chair',
-      affiliation: 'Stanford University',
+      affiliation: 'College of Engineering Chengannur',
     },
     {
-      name: 'Prof. Michael Chen',
+      name: 'Smt. Geetha S',
       role: 'Program Chair',
-      affiliation: 'MIT',
+      affiliation: 'College of Engineering Chengannur',
     },
-    {
-      name: 'Dr. Emily Williams',
-      role: 'Technical Program Chair',
-      affiliation: 'Harvard University',
-    },
+    // {
+    //   name: 'Dr. Emily Williams',
+    //   role: 'Technical Program Chair',
+    //   affiliation: 'Harvard University',
+    // },
   ],
-  technical: [
-    {
-      name: 'Dr. James Wilson',
-      role: 'Committee Member',
-      affiliation: 'University of California, Berkeley',
-    },
-    {
-      name: 'Prof. Lisa Anderson',
-      role: 'Committee Member',
-      affiliation: 'Carnegie Mellon University',
-    },
-    {
-      name: 'Dr. Robert Taylor',
-      role: 'Committee Member',
-      affiliation: 'Georgia Institute of Technology',
-    },
-  ],
-  advisory: [
-    {
-      name: 'Prof. David Brown',
-      role: 'Advisory Board Member',
-      affiliation: 'University of Oxford',
-    },
-    {
-      name: 'Dr. Maria Garcia',
-      role: 'Advisory Board Member',
-      affiliation: 'ETH Zurich',
-    },
-    {
-      name: 'Prof. John Smith',
-      role: 'Advisory Board Member',
-      affiliation: 'University of Cambridge',
-    },
-  ],
+  // technical: [
+  //   {
+  //     name: 'Dr. James Wilson',
+  //     role: 'Committee Member',
+  //     affiliation: 'University of California, Berkeley',
+  //   },
+  //   {
+  //     name: 'Prof. Lisa Anderson',
+  //     role: 'Committee Member',
+  //     affiliation: 'Carnegie Mellon University',
+  //   },
+  //   {
+  //     name: 'Dr. Robert Taylor',
+  //     role: 'Committee Member',
+  //     affiliation: 'Georgia Institute of Technology',
+  //   },
+  // ],
+  // advisory: [
+  //   {
+  //     name: 'Prof. David Brown',
+  //     role: 'Advisory Board Member',
+  //     affiliation: 'University of Oxford',
+  //   },
+  //   {
+  //     name: 'Dr. Maria Garcia',
+  //     role: 'Advisory Board Member',
+  //     affiliation: 'ETH Zurich',
+  //   },
+  //   {
+  //     name: 'Prof. John Smith',
+  //     role: 'Advisory Board Member',
+  //     affiliation: 'University of Cambridge',
+  //   },
+  // ],
 };
 
 export default function Committee() {
