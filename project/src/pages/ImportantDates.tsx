@@ -1,4 +1,5 @@
 import { Calendar } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const dates = [
   {
@@ -30,26 +31,35 @@ const dates = [
 
 export default function ImportantDates() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-blue-600">
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="mx-auto max-w-2xl lg:text-center"
+        >
+          <h2 className="text-lg font-semibold uppercase tracking-wider text-blue-600">
             Timeline
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Important Dates
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-700">
             Mark your calendar with these key dates for NCICST 2025
           </p>
-        </div>
+        </motion.div>
 
         <div className="mx-auto mt-16 max-w-2xl lg:max-w-4xl">
           <div className="grid gap-8">
             {dates.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="relative flex gap-x-4 rounded-xl bg-gray-50 p-6 ring-1 ring-inset ring-gray-200"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="relative flex gap-x-4 rounded-xl bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 ring-1 ring-inset ring-gray-200"
               >
                 <div className="flex h-12 w-12 flex-none items-center justify-center rounded-lg bg-blue-600">
                   <Calendar className="h-6 w-6 text-white" aria-hidden="true" />
@@ -65,7 +75,7 @@ export default function ImportantDates() {
                     {item.description}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
