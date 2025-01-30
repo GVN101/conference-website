@@ -7,10 +7,12 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import ImportantDates from './pages/ImportantDates';
 import Registration from './pages/Registration';
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex min-h-screen flex-col">
         <Navbar />
         <main className="flex-grow pt-16">
