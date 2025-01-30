@@ -67,6 +67,43 @@ import { useState, useEffect } from 'react';
 const committees = {
   organizing: [
     {
+      name: 'Dr. Hari. V S',
+      role: 'Conference Chair',
+      affiliation: 'College of Engineering Chengannur',
+    },
+    {
+      name: 'Dr. Shyama Das',
+      role: 'Program Chair',
+      affiliation: 'College of Engineering Chengannur',
+    },
+    {
+      name: 'Smt. Syeatha Merlin Thampy',
+      role: 'Program Chair',
+      affiliation: 'College of Engineering Chengannur',
+    },
+    {
+      name: 'Smt. Sreelekshmi K R',
+      role: 'Program Chair',
+      affiliation: 'College of Engineering Chengannur',
+    },
+    {
+      name: 'Smt. Leya G',
+      role: 'Program Chair',
+      affiliation: 'College of Engineering Chengannur',
+    }
+  ],
+  conference_coordinator: [
+    {
+      name: 'Dr. Manju S Nair',
+      role: 'Conference Coordinator',
+      affiliation: 'College of Engineering Chengannur',
+    },
+    {
+      name: 'Sri. Gopakumar G',
+      role: 'Conference Coordinator',
+      affiliation: 'College of Engineering Chengannur',
+    },
+    {
       name: 'Dr. Sabeena K',
       role: 'Conference Chair',
       affiliation: 'College of Engineering Chengannur',

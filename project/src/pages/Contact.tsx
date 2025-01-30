@@ -184,7 +184,7 @@ export default function Contact() {
                     />
                   </dt>
                   <dd className="text-sm leading-6 text-gray-600">
-                    College of Engineering Chengannu
+                    College of Engineering Chengannur
                     <br />
                     Chengannur P.O
                     <br />

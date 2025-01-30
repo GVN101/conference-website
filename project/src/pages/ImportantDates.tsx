@@ -3,30 +3,40 @@ import { motion } from 'framer-motion';
 
 const dates = [
   {
-    date: 'July 15, 2024',
+    date: 'February 15, 2025',
     event: 'Paper Submission Deadline',
     description: 'Last day to submit your research papers',
   },
   {
-    date: 'August 15, 2024',
-    event: 'Review Notification',
+    date: 'February 28, 2025',
+    event: 'Notification of acceptance of paper',
     description: 'Authors will be notified of the review results',
   },
   {
-    date: 'September 1, 2024',
-    event: 'Camera-ready Submission',
-    description: 'Deadline for final paper submission',
+    date: 'March 28, 2025',
+    event: 'Conference Day 1',
+    description: 'Day 1 of the conference',
   },
   {
-    date: 'September 15, 2024',
-    event: 'Early Registration Deadline',
-    description: 'Last day for early bird registration',
-  },
-  {
-    date: 'October 15-17, 2024',
-    event: 'Conference Dates',
-    description: 'Main conference days',
-  },
+    date: 'March 29, 2025',
+    event: 'Conference Day 2',
+    description: 'Day 2 of the conference',
+  }
+  // {
+  //   date: 'September 1, 2024',
+  //   event: 'Camera-ready Submission',
+  //   description: 'Deadline for final paper submission',
+  // },
+  // {
+  //   date: 'September 15, 2024',
+  //   event: 'Early Registration Deadline',
+  //   description: 'Last day for early bird registration',
+  // },
+  // {
+  //   date: 'October 15-17, 2024',
+  //   event: 'Conference Dates',
+  //   description: 'Main conference days',
+  // },
 ];
 
 export default function ImportantDates() {
