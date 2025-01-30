@@ -86,7 +86,7 @@ export default function CallForPaper() {
                 </ul>
               </motion.div>
             ))}
-            <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-32 mt-12 lg:mt-0">
+            <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-36 mt-12 lg:mt-0 lg:mx-12">
               {[
                 {
                   icon: <FileText className="h-6 w-6 text-blue-600" />,
