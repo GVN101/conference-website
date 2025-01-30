@@ -148,7 +148,7 @@ export default function CallForPaper() {
             <p className="mt-4 text-base leading-7 text-gray-600">
               All papers must be written in English and formatted in the standard IEEE 2-column format. Authors should use the provided LaTeX or Microsoft Word templates. Only PDF files will be accepted.
             </p>
-            <div className="mt-4 flex gap-x-4">
+            {/* <div className="mt-4 flex gap-x-4">
               <button
                 className="relative overflow-hidden h-12 px-8 rounded-full bg-green-600 text-white flex items-center justify-center cursor-pointer shadow hover:text-black hover:bg-green-700"
                 onClick={() => handleDownload('ieeeconf.zip')}
@@ -161,6 +161,22 @@ export default function CallForPaper() {
                 onClick={() => handleDownload('Template-for-Preparation-of-Papers-for-IEEE-Sponsored-Conferences.docx')}
               >
                 <span className="relative z-10">📄 MS Word Template</span>
+                <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 to-cyan-500 transform scale-x-0 origin-left transition-all duration-300 group-hover:scale-x-100"></span>
+              </button>
+            </div> */}
+            <div className="mt-4 flex flex-col sm:flex-row gap-4">
+              <button
+                className="relative overflow-hidden h-12 px-4 sm:px-6 md:px-8 rounded-full bg-green-600 text-white flex items-center justify-center cursor-pointer shadow hover:text-black hover:bg-green-700 text-sm sm:text-base w-full sm:w-auto"
+                onClick={() => handleDownload('ieeeconf.zip')}
+              >
+                <span className="relative z-10 whitespace-nowrap">📄 LaTeX Template</span>
+                <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-500 to-indigo-500 transform scale-x-0 origin-left transition-all duration-300 group-hover:scale-x-100"></span>
+              </button>
+              <button
+                className="relative overflow-hidden h-12 px-4 sm:px-6 md:px-8 rounded-full bg-blue-600 text-white flex items-center justify-center cursor-pointer shadow hover:text-black hover:bg-blue-700 text-sm sm:text-base w-full sm:w-auto"
+                onClick={() => handleDownload('Template-for-Preparation-of-Papers-for-IEEE-Sponsored-Conferences.docx')}
+              >
+                <span className="relative z-10 whitespace-nowrap">📄 MS Word Template</span>
                 <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 to-cyan-500 transform scale-x-0 origin-left transition-all duration-300 group-hover:scale-x-100"></span>
               </button>
             </div>
