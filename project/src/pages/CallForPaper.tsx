@@ -112,8 +112,8 @@ export default function CallForPaper() {
                   content: [
                     "Paper Submission: February 15, 2025",
                     "Review Notification: February 28, 2025",
-                    "Camera-ready: March 28, 2025",
-                    "Early Registration: March 29, 2025"
+                    "Camera-ready: March 10, 2025",
+                    "Early Registration: March 01, 2025"
                   ]
                 }
               ].map((item, index) => (
