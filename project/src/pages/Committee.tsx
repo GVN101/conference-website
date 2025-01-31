@@ -72,7 +72,7 @@ const committees = {
       affiliation: 'College of Engineering Chengannur',
     },
     {
-      name: 'Dr. Shyama Das',
+      name: 'Smt. Syama S',
       role: 'Program Chair',
       affiliation: 'College of Engineering Chengannur',
     },
@@ -113,6 +113,20 @@ const committees = {
       role: 'Program Chair',
       affiliation: 'College of Engineering Chengannur',
     },
+  ],
+  Advisory: [
+      {
+        name: 'Sri. Jyothi John',
+        affiliation: 'Principal (Rtd.), Model Engineering College, Kochi'
+      },
+      {
+        name: 'Smt. Ragasree M S',
+        affiliation: 'Former vice-chancellor APJAKTU'
+      },
+      {
+        name: 'Sri Gopakumar ',
+        affiliation: 'NIT Calicut'
+      }
   ]
 };
 

@@ -99,8 +99,7 @@ export default function CallForPaper() {
                   icon: <FileText className="h-6 w-6 text-blue-600" />,
                   title: "Submission Guidelines",
                   content: [
-                    "Full papers: 8-10 pages",
-                    "Short papers: 4-6 pages",
+                    "Paper Length: 4-6 pages",
                     "Format: IEEE template",
                     "Language: English",
                     "Original unpublished work",
