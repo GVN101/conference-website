@@ -1,5 +1,5 @@
 
-import { CalendarClock, FileText,  FileType, Cpu } from 'lucide-react';
+import { CalendarClock, FileText, FileType, Cpu, Monitor, Radio, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function CallForPaper() {
@@ -32,12 +32,11 @@ export default function CallForPaper() {
         </motion.div>
 
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          {/* Grid Container with 2 rows, 3 columns in the first row */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-            {/* Conference Topics Section (Top row - 3 columns) */}
             {[
               {
                 title: "Computer Science",
+                icon: <Monitor className="w-12 h-12 text-blue-600" />,
                 content: [
                   "Machine Learning & AI",
                   "Data Science & Big Data",
@@ -49,6 +48,7 @@ export default function CallForPaper() {
               },
               {
                 title: "ECE (Electronics & Communication)",
+                icon: <Radio className="w-12 h-12 text-blue-600" />,
                 content: [
                   "Signal Processing",
                   "Wireless Communications",
@@ -60,6 +60,7 @@ export default function CallForPaper() {
               },
               {
                 title: "EEE (Electrical & Electronics Engineering)",
+                icon: <Zap className="w-12 h-12 text-blue-600" />,
                 content: [
                   "Power Systems",
                   "Renewable Energy Systems",
@@ -76,16 +77,22 @@ export default function CallForPaper() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="rounded-lg bg-white p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 relative overflow-hidden group"
               >
-                <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
-                <ul className="mt-4 list-disc list-inside text-base leading-7 text-gray-600">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full -mr-16 -mt-16 opacity-20 group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold text-blue-900 mb-4">{item.title}</h3>
+                <ul className="space-y-3">
                   {item.content.map((point, i) => (
-                    <li key={i} className="mt-1">{point}</li>
+                    <li key={i} className="flex items-center text-gray-700">
+                      <div className="w-2 h-2 rounded-full bg-blue-400 mr-3"></div>
+                      {point}
+                    </li>
                   ))}
                 </ul>
               </motion.div>
             ))}
+            
             <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-36 mt-12 lg:mt-0 lg:mx-12">
               {[
                 {
@@ -134,6 +141,7 @@ export default function CallForPaper() {
               ))}
             </div>
           </div>
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
