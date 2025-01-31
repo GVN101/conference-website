@@ -103,7 +103,6 @@ export default function CallForPaper() {
                     "Format: IEEE template",
                     "Language: English",
                     "Original unpublished work",
-                    "Blind review process"
                   ]
                 },
                 {
