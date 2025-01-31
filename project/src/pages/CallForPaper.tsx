@@ -1,5 +1,5 @@
 
-import { CalendarClock, FileText, FileType, Cpu, Monitor, Radio, Zap } from 'lucide-react';
+import { CalendarClock, FileText, FileType, Cpu, Monitor, Radio, Zap,Upload } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function CallForPaper() {
@@ -140,7 +140,34 @@ export default function CallForPaper() {
               ))}
             </div>
           </div>
-
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="mt-16 rounded-lg bg-white p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 className="text-lg font-semibold text-gray-900 flex items-center gap-x-2">
+              <Upload className="h-6 w-6 text-blue-600" />
+              Paper Submission
+            </h3>
+            <p className="mt-4 text-base leading-7 text-gray-600">
+              All research papers must be submitted through the Microsoft Conference Management Toolkit. Authors should ensure their submissions adhere to the conference guidelines and formatting requirements.
+            </p>
+            <p className="mt-2 text-sm text-red-600 font-medium">
+              * Please note: Authors must be registered for the conference to submit their papers.
+            </p>
+            <div className="mt-4">
+              <a
+                href="https://conference-submission-portal.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-600 text-white font-medium px-6 py-3 rounded-full shadow hover:bg-blue-700 transition"
+              >
+                Submit Your Paper
+              </a>
+            </div>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
