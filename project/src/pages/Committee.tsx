@@ -92,7 +92,7 @@ const committees = {
       affiliation: 'College of Engineering Chengannur',
     }
   ],
-  conference_coordinator: [
+  Coordinator: [
     {
       name: 'Dr. Manju S Nair',
       role: 'Conference Coordinator',
