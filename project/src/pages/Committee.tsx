@@ -124,8 +124,12 @@ const committees = {
         affiliation: 'Former vice-chancellor APJAKTU'
       },
       {
-        name: 'Sri Gopakumar ',
+        name: 'Dr. Gopakumar G',
         affiliation: 'NIT Calicut'
+      },
+      {
+        name: 'Dr. Biju R Mohan',
+        affiliation: 'NIT Surathkal'
       }
   ]
 };
