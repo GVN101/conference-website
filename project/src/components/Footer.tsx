@@ -2,13 +2,13 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="z-[1] bg-gray-900 text-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between md:flex-row">
           <div className="mb-6 md:mb-0">
             <div className='flex '>
               <h2 className="text-2xl font-bold">NCICST 2025</h2>
-              <img height={'30px'} width={'30px'} src="../../public/images/favicon_white.png" alt="logo" />
+              <img height={'30px'} width={'30px'} src="../../images/favicon_white.png" alt="logo" />
             </div>
             <p className="mt-2 text-gray-400">Shaping the Future of Education</p>
           </div>
