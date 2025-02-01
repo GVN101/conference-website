@@ -121,8 +121,8 @@ export default function Home() {
               <div className="mb-4 flex justify-center">
                 <Globe className="h-12 w-12 text-green-500" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Global Community</h3>
-              <p className="mt-4 text-gray-600">Connect with a diverse international audience through our hybrid format, expanding your professional network.</p>
+              <h3 className="text-xl font-semibold text-gray-900">Diverse Community</h3>
+              <p className="mt-4 text-gray-600">Connect with a diverse audience through our hybrid format, expanding your professional network.</p>
             </motion.div>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function Home() {
               {
                 title: "Networking",
                 description:
-                  "Connect with peers and industry leaders from around the world.",
+                  "Build meaningful connections with peers and industry leaders, fostering collaboration and growth.",
                 icon: Network,
                 color: "text-green-500"
               },
