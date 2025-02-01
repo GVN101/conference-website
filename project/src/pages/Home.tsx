@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         {/* Hybrid Mode Section */}
-        <div className="bg-white py-24">
+        <div className="bg-white/0 py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -52,10 +52,10 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+              <h2 className="text-3xl font-bold text-white sm:text-4xl">
                 Experience the Future of Conferences
               </h2>
-              <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-600">
+              <p className="mx-auto mt-3 max-w-2xl text-xl text-white">
                 Join us in-person or virtually - the choice is yours!
               </p>
             </motion.div>
@@ -82,13 +82,13 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="bg-white py-24">
+            <div className="bg-white/0 py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Conference Highlights
             </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+            <p className="mx-auto mt-3 max-w-2xl text-xl text-white sm:mt-4">
               Join us for three days of inspiring talks, workshops, and networking opportunities
             </p>
           </div>
