@@ -19,7 +19,7 @@ export default function Navbar() {
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <NavLink to="/" className="-m-1.5 p-1.5 text-xl font-bold">
-              <img height={'50px'} width={'50px'} src="/images/favicon_black.png" alt="logo" />
+              <img height={'50px'} width={'50px'} src="../../images/favicon_black.png" alt="logo" />
           </NavLink>
         </div>
         <div className="flex lg:hidden">
