@@ -100,7 +100,7 @@ export default function Home() {
                   <Globe className="h-12 w-12 text-green-500" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">Domestic Forum</h3>
-                <p className="mt-4 text-gray-600">Connect with a diverse audience through our hybrid format, expanding your professional network.</p>
+                <p className="mt-4 text-gray-600">Engage in meaningful discussions and collaborations within a national community of professionals, researchers, and industry experts.</p>
               </motion.div>
             </div>
           </div>
