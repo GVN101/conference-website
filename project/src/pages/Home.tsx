@@ -99,7 +99,7 @@ export default function Home() {
                 <div className="mb-4 flex justify-center">
                   <Globe className="h-12 w-12 text-green-500" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">Diverse Community</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Domestic Forum</h3>
                 <p className="mt-4 text-gray-600">Connect with a diverse audience through our hybrid format, expanding your professional network.</p>
               </motion.div>
             </div>
