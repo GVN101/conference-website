@@ -72,7 +72,7 @@ export default function Contact() {
                     <Phone className="h-6 w-5 text-blue-600" aria-hidden="true" />
                   </dt>
                   <dd className="text-sm leading-6 text-gray-600">
-                  +91 95444 28325 (Sabeena k)<br />+91 94959 16686 (Geetha S)<br />
+                  +91 95444 28325 (Dr. Sabeena k)<br />+91 94959 16686 (Geetha S)<br />
                   </dd>
                 </div>
                 <div className="flex gap-x-4">
