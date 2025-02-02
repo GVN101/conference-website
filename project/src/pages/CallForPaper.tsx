@@ -169,7 +169,7 @@ export default function CallForPaper() {
             </p>
             <div className="mt-4">
               <a
-                href="https://conference-submission-portal.com"
+                href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 text-white font-medium px-6 py-3 rounded-full shadow hover:bg-blue-700 transition"
