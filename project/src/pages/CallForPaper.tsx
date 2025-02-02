@@ -150,9 +150,20 @@ export default function CallForPaper() {
               <Upload className="h-6 w-6 text-blue-600" />
               Paper Submission
             </h3>
+            {/* <p className="mt-4 text-base leading-7 text-gray-600">
+              All research papers must be submitted through the Microsoft Conference Management Toolkit or to the email: ncicst25@gmail.com. Authors should ensure their submissions adhere to the conference guidelines and formatting requirements.
+            </p> */}
             <p className="mt-4 text-base leading-7 text-gray-600">
-              All research papers must be submitted through the Microsoft Conference Management Toolkit. Authors should ensure their submissions adhere to the conference guidelines and formatting requirements.
+              All research papers must be submitted through the Microsoft Conference Management Toolkit or via email:&nbsp;  
+              <a 
+                href="mailto:ncicst25@gmail.com" 
+                className="text-blue-600 hover:underline"
+              >
+                ncicst25@gmail.com
+              </a>. 
+              <br />Authors should ensure their submissions adhere to the conference guidelines and formatting requirements.
             </p>
+
             <p className="mt-2 text-sm text-red-600 font-medium">
               * Please note: Authors must be registered for the conference to submit their papers.
             </p>
