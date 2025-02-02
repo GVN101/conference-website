@@ -35,7 +35,7 @@ export default function CallForPaper() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                title: "Computing & Information Technology ",
+                title: "Advanced Computing & Intelligent Systems",
                 icon: <Monitor className="w-12 h-12 text-blue-600" />,
                 content: [
                   "Machine Learning & AI",
@@ -47,7 +47,7 @@ export default function CallForPaper() {
                 ]
               },
               {
-                title: "Electronics & Communication Technologies ",
+                title: "Communication & Embedded Technologies",
                 icon: <Radio className="w-12 h-12 text-blue-600" />,
                 content: [
                   "Signal Processing",
