@@ -65,34 +65,53 @@
 import { useState, useEffect } from 'react';
 
 const committees = {
+  patron: [
+    {
+      name: 'Dr. v. A Arun Kumar',
+      role: 'Chief Patron',
+      affiliation: 'Director of IHRD',
+    },
+    {
+      name: 'Dr. Hari V S',
+      role: 'Principal of College of Engineering Chengannur',
+      affiliation: 'College of Engineering Chengannur',
+    }
+  ],
   organizing: [
     {
-      name: 'Dr. Hari. V S',
-      role: 'Conference Chair',
+      name: 'Smt. Chinchu M Pillai ',
       affiliation: 'College of Engineering Chengannur',
     },
     {
       name: 'Smt. Syama S',
-      role: 'Program Chair',
       affiliation: 'College of Engineering Chengannur',
     },
     {
       name: 'Smt. Syeatha Merlin Thampy',
-      role: 'Program Chair',
       affiliation: 'College of Engineering Chengannur',
     },
     {
       name: 'Smt. Sreelekshmi K R',
-      role: 'Program Chair',
       affiliation: 'College of Engineering Chengannur',
     },
     {
-      name: 'Smt. Leya G',
-      role: 'Program Chair',
+      name: 'Smt. Alka Vijay',
+      affiliation: 'College of Engineering Chengannur',
+    },
+    {
+      name: 'Smt. Neethu Treasa',
+      affiliation: 'College of Engineering Chengannur',
+    },
+    {
+      name: 'Smt. Sulaja Sanal',
+      affiliation: 'College of Engineering Chengannur',
+    },
+    {
+      name: 'Smt. Ameena A',
       affiliation: 'College of Engineering Chengannur',
     }
   ],
-  Coordinator: [
+  Coordinating: [
     {
       name: 'Dr. Manju S Nair',
       role: 'Conference Coordinator',
@@ -110,7 +129,7 @@ const committees = {
     },
     {
       name: 'Smt. Geetha S',
-      role: 'Program Chair',
+      role: 'Conference Chair',
       affiliation: 'College of Engineering Chengannur',
     },
   ],
