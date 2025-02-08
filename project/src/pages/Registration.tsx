@@ -33,13 +33,13 @@ const registrationTypes: RegistrationType[] = [
     ],
     registrationLink: 'https://forms.gle/MoX7mfDyo1hGyr1VA'
   },
-  {
-    type: 'Workshop Registration',
-    categories: [
-      { name: 'All participants', price: '₹500.00' },
-    ],
-    registrationLink: 'https://forms.google.com/workshop-registration'
-  },
+  // {
+  //   type: 'Workshop Registration',
+  //   categories: [
+  //     { name: 'All participants', price: '₹500.00' },
+  //   ],
+  //   registrationLink: 'https://forms.google.com/workshop-registration'
+  // },
 ];
 
 export default function Registration() {
@@ -68,7 +68,7 @@ export default function Registration() {
           </p>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-8 lg:max-w-2xl lg:grid-cols-2">
           {registrationTypes.map((tier) => (
             <div
               key={tier.type}
