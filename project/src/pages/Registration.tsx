@@ -8,11 +8,12 @@ interface Category {
 interface RegistrationType {
   type: string;
   categories: Category[];
-  registrationLink: string;
+  registrationLink?: string; // Made optional for "Available Soon"
 }
 
 interface RegistrationButtonProps {
-  link: string;
+  link?: string;
+  isDisabled?: boolean;
 }
 
 const registrationTypes: RegistrationType[] = [
@@ -33,26 +34,33 @@ const registrationTypes: RegistrationType[] = [
     ],
     registrationLink: 'https://forms.gle/MoX7mfDyo1hGyr1VA'
   },
-  // {
-  //   type: 'Workshop Registration',
-  //   categories: [
-  //     { name: 'All participants', price: '₹500.00' },
-  //   ],
-  //   registrationLink: 'https://forms.google.com/workshop-registration'
-  // },
+  {
+    type: 'Workshop Registration',
+    categories: [
+      { name: 'All participants', price: '₹500.00' },
+    ],
+  },
 ];
 
 export default function Registration() {
-  const RegistrationButton = ({ link }: RegistrationButtonProps) => (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center justify-center rounded-md bg-blue-500 px-6 py-3 text-base font-medium text-white shadow-md hover:bg-blue-600 transition-colors duration-300 w-full"
-    >
-      Register Now
-      <ArrowUpRight className="ml-2 h-5 w-5 text-white" />
-    </a>
+  const RegistrationButton = ({ link, isDisabled }: RegistrationButtonProps) => (
+    isDisabled ? (
+      <span
+        className="inline-flex items-center justify-center rounded-md bg-gray-600 px-6 py-3 text-base font-medium text-gray-300 shadow-md w-full cursor-not-allowed"
+      >
+        Available Soon
+      </span>
+    ) : (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center rounded-md bg-blue-500 px-6 py-3 text-base font-medium text-white shadow-md hover:bg-blue-600 transition-colors duration-300 w-full"
+      >
+        Register Now
+        <ArrowUpRight className="ml-2 h-5 w-5 text-white" />
+      </a>
+    )
   );
 
   return (
@@ -68,7 +76,7 @@ export default function Registration() {
           </p>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-8 lg:max-w-2xl lg:grid-cols-2">
+        <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-8 sm:max-w-5xl lg:max-w-6xl lg:grid-cols-3">
           {registrationTypes.map((tier) => (
             <div
               key={tier.type}
@@ -84,7 +92,7 @@ export default function Registration() {
                 ))}
               </ul>
               <div className="mt-8">
-                <RegistrationButton link={tier.registrationLink} />
+                <RegistrationButton link={tier.registrationLink} isDisabled={!tier.registrationLink} />
               </div>
             </div>
           ))}
