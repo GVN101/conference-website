@@ -165,7 +165,7 @@ export default function CallForPaper() {
             </p>
 
             <p className="mt-2 text-sm text-red-600 font-medium">
-              * Please note: Authors must be registered for the conference to submit their papers.
+              * Please note: Authors must only register after the conference paper has been submitted and the paper has been accepted.
             </p>
             <div className="mt-4">
               <a
