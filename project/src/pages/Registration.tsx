@@ -229,7 +229,7 @@ export default function Registration() {
               Authors should ensure their submissions adhere to the conference guidelines and formatting requirements.
             </p>
             <p className="mt-2 text-sm text-red-500 font-medium">
-              * Please note: Authors must only register after the conference paper has been submitted and the paper has been accepted.
+              * Please note: Authors must only register after the conference paper has been accepted.
             </p>
             <div className="mt-4">
               <a
