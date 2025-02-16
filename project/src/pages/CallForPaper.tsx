@@ -109,7 +109,8 @@ export default function CallForPaper() {
                   icon: <CalendarClock className="h-6 w-6 text-blue-600" />,
                   title: "Important Deadlines",
                   content: [
-                    "Paper Submission: February 15, 2025",
+                    <span className="line-through">Paper Submission Deadline: February 15, 2025</span>,
+                    "Paper Submission Deadline extended to: Feb 28,2025",
                     "Review Notification: February 28, 2025",
                     "Camera-ready: March 10, 2025",
                     "Early Registration: March 01, 2025"
