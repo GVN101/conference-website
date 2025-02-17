@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Globe, Users, Video, UserSquare2, Presentation, Network } from "lucide-react";
+import { Globe, Users, Video, UserSquare2, Presentation, Network, Upload } from "lucide-react";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       {/* Content Section */}
-      <div className="relative z-10 space-y-24 bg-transparent">
+      <div className="relative z-10 space-y-6 bg-transparent">
         {/* Hero Section */}
         <div className="relative mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
@@ -41,9 +41,50 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+            // className="rounded-lg bg-white/95 p-8 shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
+            className="rounded-lg bg-gray-900/80 p-8 shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
+          >
+            <h3 className="text-xl font-semibold text-white flex items-center gap-x-2">
+              <Upload className="h-6 w-6 text-blue-400" />
+              Paper Submission
+            </h3>
+            <p className="mt-4 text-base leading-7 text-gray-300">
+              All research papers must be submitted through the Microsoft Conference Management Toolkit or via email:{" "}
+              <a 
+                href="mailto:ncicst25@gmail.com" 
+                className="text-blue-400 hover:text-blue-300 hover:underline"
+              >
+                ncicst25@gmail.com
+              </a>
+              <br />
+              Authors should ensure their submissions adhere to the conference guidelines and formatting requirements.
+            </p>
+
+            <p className="mt-2 text-sm text-red-400 font-medium">
+              * Please note: Authors must only register after the conference paper has been accepted.
+            </p>
+            <div className="mt-4">
+              <a
+                href="https://cmt3.research.microsoft.com/NCICST2025"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-600 text-white font-medium px-6 py-3 rounded-full shadow hover:bg-blue-700 transition-colors duration-300 hover:scale-105 transform"
+              >
+                Submit Your Paper
+              </a>
+            </div>
+          </motion.div>
+        </div>
 
         {/* Hybrid Mode Section */}
-        <div className="bg-white/0 py-24">
+        <div className="bg-white/0 py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -107,7 +148,7 @@ export default function Home() {
         </div>
 
         {/* Conference Highlights Section */}
-        <div className="bg-white/0 py-24">
+        <div className="bg-white/0 py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
