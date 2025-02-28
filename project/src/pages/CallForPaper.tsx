@@ -110,7 +110,7 @@ export default function CallForPaper() {
                   title: "Important Deadlines",
                   content: [
                     <span className="line-through">Paper Submission Deadline: February 15, 2025</span>,
-                    "Paper Submission Deadline extended to: Feb 28,2025",
+                    "Paper Submission Deadline extended to: March 10,2025",
                     "Review Notification: March 10, 2025",
                     "Camera-ready: March 14, 2025",
                   ]

@@ -8,7 +8,7 @@ const dates = [
     description: 'Last day to submit your research papers',
   },
   {
-    date: 'February 28, 2020',
+    date: 'March 10, 2025',
     event: 'Paper Submission Deadline extended',
     description: 'Extended Last day to submit your research papers',
   },
