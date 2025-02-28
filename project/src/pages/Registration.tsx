@@ -252,10 +252,90 @@ export default function Registration() {
           <p className="mt-6 text-lg leading-8 text-gray-400">
             Choose your registration category and secure your participation today!
           </p>
+
+          {/* Flex container to align both cards */}
+          <div className="flex flex-col items-center w-full space-y-8 mt-12">
+            {/* Paper Submission Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="max-w-4xl w-full rounded-lg bg-gray-900 p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-700 text-gray-200"
+            >
+              <h3 className="text-lg font-semibold flex items-center gap-x-2 text-blue-400">
+                <Upload className="h-6 w-6 text-blue-400" />
+                Paper Submission
+              </h3>
+              <p className="mt-4 text-base leading-7 text-gray-400">
+                All research papers must be submitted through the Microsoft Conference Management Toolkit or via email:&nbsp;
+                <a href="mailto:ncicst25@gmail.com" className="text-blue-400 hover:underline">
+                  ncicst25@gmail.com
+                </a>.
+                <br />
+                Authors should ensure their submissions adhere to the conference guidelines and formatting requirements.
+              </p>
+              <p className="mt-2 text-sm text-red-500 font-medium">
+                * Please note: Authors must only register after the conference paper has been accepted.
+              </p>
+              <div className="mt-4">
+                <a
+                  href="https://cmt3.research.microsoft.com/NCICST2025"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-blue-500 text-white font-medium px-6 py-3 rounded-full shadow hover:bg-blue-600 transition"
+                >
+                  Submit Your Paper
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Poster Submission Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="max-w-4xl w-full rounded-lg bg-gray-900 p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-700 text-gray-200"
+            >
+              <h3 className="text-lg font-semibold flex items-center gap-x-2 text-blue-400">
+                <Upload className="h-6 w-6 text-blue-400" />
+                Poster Submission
+              </h3>
+              <p className="mt-4 text-base leading-7 text-gray-400">
+                All posters must be submitted through email to:&nbsp;
+                <a href="mailto:ncicst25@gmail.com" className="text-blue-400 hover:underline">
+                  ncicst25@gmail.com
+                </a>.
+                <br />
+                Authors should ensure their poster submissions follow the conference poster guidelines and formatting requirements.
+              </p>
+              <div className="mt-6 flex flex-col sm:flex-row gap-4">
+              <a href="\images\guidelines_poster.png" download className="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-medium px-4 py-2 rounded-lg shadow transition">
+                <Download className="mr-2 h-5 w-5" /> Download Guidelines
+              </a>
+              <a href="/images/poster_template.png" download className="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-medium px-4 py-2 rounded-lg shadow transition">
+                <Download className="mr-2 h-5 w-5" /> Download Template
+              </a>
+              </div>
+              <p className="mt-2 text-sm text-red-500 font-medium">
+                * Please note: Authors must only register after the poster has been accepted.
+              </p>
+              <div className="mt-4">
+                <a
+                  href="mailto:ncicst25@gmail.com?subject=Poster Submission&body=Dear Organizing Team,%0D%0A%0D%0A I would like to submit my poster for the conference. Please find the attached poster.%0D%0A%0D%0ARegards,%0D%0A[Your Name]"
+                  className="inline-block bg-blue-500 text-white font-medium px-6 py-3 rounded-full shadow hover:bg-blue-600 transition"
+                >
+                  Submit Your Poster
+                </a>
+              </div>
+
+            </motion.div>
+          </div>
         </div>
 
         {/* Registration Cards */}
-        <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-8 sm:max-w-3xl lg:max-w-4xl lg:grid-cols-2">
+        <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-8 sm:max-w-5xl lg:max-w-4xl lg:grid-cols-2">
           {registrationTypes.map((tier) => (
             <div
               key={tier.type}
