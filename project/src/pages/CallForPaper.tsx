@@ -150,9 +150,7 @@ export default function CallForPaper() {
               <Upload className="h-6 w-6 text-blue-600" />
               Paper Submission
             </h3>
-            {/* <p className="mt-4 text-base leading-7 text-gray-600">
-              All research papers must be submitted through the Microsoft Conference Management Toolkit or to the email: ncicst25@gmail.com. Authors should ensure their submissions adhere to the conference guidelines and formatting requirements.
-            </p> */}
+
             <p className="mt-4 text-base leading-7 text-gray-600">
               All research papers must be submitted through the Microsoft Conference Management Toolkit or via email:&nbsp;  
               <a 
@@ -167,17 +165,18 @@ export default function CallForPaper() {
             <p className="mt-2 text-sm text-red-600 font-medium">
               * Please note: Authors must only register after the conference paper has been accepted.
             </p>
-            <div className="mt-4">
-              <a
-                href="https://cmt3.research.microsoft.com/NCICST2025"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-600 text-white font-medium px-6 py-3 rounded-full shadow hover:bg-blue-700 transition"
+
+            <div className="mt-4 flex items-center gap-x-4">
+              <button
+                disabled
+                className="inline-block bg-gray-400 text-white font-medium px-6 py-3 rounded-full shadow cursor-not-allowed"
               >
                 Submit Your Paper
-              </a>
+              </button>
+              <span className="text-red-600 font-medium">Paper submission ended</span>
             </div>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

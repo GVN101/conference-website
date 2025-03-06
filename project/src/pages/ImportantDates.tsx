@@ -8,9 +8,14 @@ const dates = [
     description: 'Last day to submit your research papers',
   },
   {
-    date: 'March 10, 2025',
+    date: 'March 05, 2025',
     event: 'Paper Submission Deadline extended',
     description: 'Extended Last day to submit your research papers',
+  },
+  {
+    date: 'March 06, 2025',
+    event: 'Paper Submission Ended',
+    description: 'Paper submission closed',
   },
   {
     date: 'March 10, 2025',
@@ -136,17 +141,17 @@ export default function ImportantDates() {
                 </div>
                 <div className="flex-auto">
                   <h3
-                    className={`text-lg font-semibold leading-8 text-gray-900 ${index === 0 ? 'line-through text-gray-500' : ''}`}
+                    className={`text-lg font-semibold leading-8 text-gray-900 ${(index === 0 || index === 1) ? 'line-through text-gray-500' : ''}`}
                   >
                     {item.date}
                   </h3>
                   <p
-                    className={`mt-1 text-base font-semibold leading-7 text-blue-600 ${index === 0 ? 'line-through text-gray-500' : ''}`}
+                    className={`mt-1 text-base font-semibold leading-7 text-blue-600 ${(index === 0 || index === 1) ? 'line-through text-gray-500' : ''}`}
                   >
                     {item.event}
                   </p>
                   <p
-                    className={`mt-1 text-base leading-7 text-gray-600 ${index === 0 ? 'line-through text-gray-500' : ''}`}
+                    className={`mt-1 text-base leading-7 text-gray-600 ${(index === 0 || index === 1) ? 'line-through text-gray-500' : ''}`}
                   >
                     {item.description}
                   </p>

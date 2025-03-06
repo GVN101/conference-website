@@ -43,45 +43,45 @@ export default function Home() {
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
-            // className="rounded-lg bg-white/95 p-8 shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
-            className="rounded-lg bg-gray-900/80 p-8 shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
-          >
-            <h3 className="text-xl font-semibold text-white flex items-center gap-x-2">
-              <Upload className="h-6 w-6 text-blue-400" />
-              Paper Submission
-            </h3>
-            <p className="mt-4 text-base leading-7 text-gray-300">
-              All research papers must be submitted through the Microsoft Conference Management Toolkit or via email:{" "}
-              <a 
-                href="mailto:ncicst25@gmail.com" 
-                className="text-blue-400 hover:text-blue-300 hover:underline"
-              >
-                ncicst25@gmail.com
-              </a>
-              <br />
-              Authors should ensure their submissions adhere to the conference guidelines and formatting requirements.
-            </p>
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.4 }}
+    viewport={{ once: true }}
+    className="rounded-lg bg-gray-900/80 p-8 shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
+  >
+    <h3 className="text-xl font-semibold text-white flex items-center gap-x-2">
+      <Upload className="h-6 w-6 text-blue-400" />
+      Paper Submission
+    </h3>
+    <p className="mt-4 text-base leading-7 text-gray-300">
+      All research papers must be submitted through the Microsoft Conference Management Toolkit or via email:{" "}
+      <a 
+        href="mailto:ncicst25@gmail.com" 
+        className="text-blue-400 hover:text-blue-300 hover:underline"
+      >
+        ncicst25@gmail.com
+      </a>
+      <br />
+      Authors should ensure their submissions adhere to the conference guidelines and formatting requirements.
+    </p>
 
-            <p className="mt-2 text-sm text-red-400 font-medium">
-              * Please note: Authors must only register after the conference paper has been accepted.
-            </p>
-            <div className="mt-4">
-              <a
-                href="https://cmt3.research.microsoft.com/NCICST2025"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-600 text-white font-medium px-6 py-3 rounded-full shadow hover:bg-blue-700 transition-colors duration-300 hover:scale-105 transform"
-              >
-                Submit Your Paper
-              </a>
-            </div>
-          </motion.div>
-        </div>
+    <p className="mt-2 text-sm text-red-400 font-medium">
+      * Please note: Authors must only register after the conference paper has been accepted.
+    </p>
+
+    <div className="mt-4 flex items-center gap-x-4">
+      <button
+        disabled
+        className="inline-block bg-gray-500 text-white font-medium px-6 py-3 rounded-full shadow cursor-not-allowed"
+      >
+        Submit Your Paper
+      </button>
+      <span className="text-red-400 font-medium">Paper submission ended</span>
+    </div>
+  </motion.div>
+</div>
+
 
         {/* Hybrid Mode Section */}
         <div className="bg-white/0 py-12">
